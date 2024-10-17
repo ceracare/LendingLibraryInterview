@@ -11,7 +11,13 @@ Welcome to the Book Lending Library API coding challenge! In this challenge, we 
  - We'll be working on your machine doing a screenshare
 
 ## Migrations
-dotnet ef migrations add "Initial Migration" -p ./LendingLibraryInterview.Data -s ./LendingLibraryInterview.Api
+
+### Apply migrations
+`dotnet ef database update -p ./LendingLibraryInterview.Data -s ./LendingLibraryInterview.Api`
+
+### Add migration
+`dotnet ef migrations add "Initial Migration" -p ./LendingLibraryInterview.Data -s ./LendingLibraryInterview.Api`
+
 
 ## Notes for Cera staff:
 https://ceracare.atlassian.net/wiki/x/AYCos
